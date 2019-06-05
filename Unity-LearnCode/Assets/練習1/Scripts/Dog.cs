@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+
+[System.Serializable]
 public class Dog
 {
     #region 欄位  //包覆定義值
@@ -33,7 +35,7 @@ public class Dog
     /// </summary>
     /// <param name="food">食物</param>
     /// <param name="speed">吃飯速度</param>
-    public void Eat(string food, string speed= "慢")
+    public void Eat(string food, string speed = "慢")
     {
         Debug.Log(name + "：" + food + "，速度：" + speed);
     }
