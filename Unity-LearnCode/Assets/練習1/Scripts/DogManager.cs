@@ -2,8 +2,8 @@
 
 public class DogManager : MonoBehaviour
 {
-    public Dog DogA = new Dog();
-    public Dog DogB = new Dog();
+    public Dog DogA = new Dog("公", 7);
+    public Dog DogB = new Dog("母", 9);
 
     #region 事件
     private void Start()
@@ -11,16 +11,18 @@ public class DogManager : MonoBehaviour
         DogA.name = "寶寶";
         DogA.weight = 30.5f;
         DogA.type = "馬爾濟斯";
-        DogA.sex = "公";
         DogA.color = "白色";
-        DogA.age = 7;
+
+        //DogA.sex = "公";
+        //DogA.age = 7;
 
         DogB.name = "娜娜";
         DogB.weight = 35.5f;
         DogB.type = "臘腸";
-        DogB.sex = "母";
         DogB.color = "咖啡";
-        DogB.age = 9;
+        
+        //DogB.sex = "母";
+        //DogB.age = 9;
 
         Debug.Log(DogA.name + "品種：" + DogA.type + "顏色：" + DogA.color);
         Debug.Log(DogB.name + "品種：" + DogB.type + "顏色：" + DogB.color);
